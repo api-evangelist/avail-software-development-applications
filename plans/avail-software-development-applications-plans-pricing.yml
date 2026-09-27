@@ -1,0 +1,32 @@
+generated: 2026-09-26
+name: avail-software-development-applications
+method: searched
+source: https://www.getavail.com/pricing
+audience: developer-api
+pricing_basis: per-seat
+published: true
+plans:
+  - name: Free
+    price_text: "0"
+    price: 0
+    currency: USD
+    description: Free Single User License
+    limits: []
+  - name: AVAIL Monthly
+    price_text: "25"
+    price: 25
+    currency: USD
+    description: Monthly Single User License
+    limits: []
+  - name: AVAIL Annual
+    price_text: "250"
+    price: 250
+    currency: USD
+    description: Annual Single User License
+    limits: []
+  - name: AVAIL Enterprise
+    price_text: "250"
+    price: 250
+    currency: USD
+    description: 3-Year Single User License, Minimum 50 Users
+    limits: []

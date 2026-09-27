@@ -1,0 +1,34 @@
+generated: '2026-09-26'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://blog.getavail.com/whats-new-at-avail
+sources:
+- https://blog.getavail.com/whats-new-at-avail
+- https://blog.getavail.com/tag/release-notes
+- https://blog.getavail.com/unifi-to-avail
+entries:
+- breaking: false
+  highlights:
+  - AVAIL Desktop 4.6 released in May 2024, including new preview features Revit Application Version Management and Palettes.
+  version: '4.6'
+  date: '2024-05-01'
+- breaking: false
+  highlights:
+  - We are ecstatic to get this latest release of the AVAIL Desktop (4.0) in your hands.
+  version: '4.0'
+- breaking: false
+  highlights:
+  - What better way to kickstart 2019 than with an AVAIL update! We’ve made improvements you’re not going to want to miss across AVAIL Desktop,
+    AVAIL Browser for Revit and AVAIL Stream.
+  version: 3.10.1
+- breaking: false
+  highlights:
+  - AVAIL 2019 Summer Release
+  version: 2019 Summer
+- breaking: false
+  highlights:
+  - AVAIL Spring 2019 Release
+  version: Spring 2019
+current_version: '4.6'
+note: Only entries explicitly listed on the provided pages are included. Dates are provided when available; otherwise null.
+docs: https://blog.getavail.com/whats-new-at-avail
