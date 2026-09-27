@@ -3,15 +3,16 @@ method: derived
 source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
 generator: derive-hosts.py
 summary:
-  hosts: 8
-  own: 8
-  other_domain: 0
+  hosts: 10
+  own: 1
+  other_domain: 9
   platform: 0
   roles:
   - api
   - identity
   - marketing
   - other
+  - security
   - website
 hosts:
 - host: api.getavail.com
@@ -21,20 +22,32 @@ hosts:
   serves: []
   registrable_domain: getavail.com
   role: api
-  relation: own
+  relation: other-domain
 - host: blog.getavail.com
   found_by:
+  - pointer
   - probed
   - site-links
   - docs-index
   - contract-discovery
   - well-known
-  types: []
+  types:
+  - ChangeLog
+  - Blog
   serves:
   - docs
   registrable_domain: getavail.com
   role: marketing
-  relation: own
+  relation: other-domain
+- host: clarity.com
+  found_by:
+  - pointer
+  types:
+  - Security
+  serves: []
+  registrable_domain: clarity.com
+  role: security
+  relation: other-domain
 - host: confluence.getavail.com
   found_by:
   - probed
@@ -45,7 +58,7 @@ hosts:
   serves: []
   registrable_domain: getavail.com
   role: other
-  relation: own
+  relation: other-domain
 - host: getavail.com
   found_by:
   - probed
@@ -56,7 +69,7 @@ hosts:
   serves: []
   registrable_domain: getavail.com
   role: other
-  relation: own
+  relation: other-domain
 - host: helpcenter.getavail.com
   found_by:
   - probed
@@ -66,17 +79,19 @@ hosts:
   serves: []
   registrable_domain: getavail.com
   role: other
-  relation: own
+  relation: other-domain
 - host: login.getavail.com
   found_by:
+  - pointer
   - probed
   - site-links
   - well-known
-  types: []
+  types:
+  - SignUp
   serves: []
   registrable_domain: getavail.com
   role: identity
-  relation: own
+  relation: other-domain
 - host: webinars.getavail.com
   found_by:
   - probed
@@ -86,6 +101,15 @@ hosts:
   serves: []
   registrable_domain: getavail.com
   role: other
+  relation: other-domain
+- host: www.availproject.org
+  found_by:
+  - pointer
+  types:
+  - Website
+  serves: []
+  registrable_domain: availproject.org
+  role: website
   relation: own
 - host: www.getavail.com
   found_by:
@@ -93,9 +117,13 @@ hosts:
   - probed
   - contract-discovery
   - well-known
+  - vendor-detect
   types:
-  - Website
-  serves: []
+  - TermsOfService
+  - Pricing
+  serves:
+  - cdn
+  vendor: cloudflare
   registrable_domain: getavail.com
-  role: website
-  relation: own
+  role: marketing
+  relation: other-domain

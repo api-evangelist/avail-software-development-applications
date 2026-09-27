@@ -16,19 +16,17 @@ areas_vocabulary:
 - identity
 - mcp-hosting
 vendors:
-- vendor: cloudflare
-  name: Cloudflare
-  area: cdn
-  host: www.getavail.com
-  evidence: header:cf-ray
+- vendor: vercel
+  name: Vercel
+  area: hosting
+  host: www.availproject.org
+  evidence: header:x-vercel-id
   signal: header
   confidence: high
-  kin_score:
-  - https_enforced
-  - hsts
+  kin_score: []
 reliance:
   areas_vendor_served:
-  - cdn
+  - hosting
   vendor_count: 1
   areas_observed: 12
   share_of_observable_areas: 0.083
@@ -36,4 +34,5 @@ reliance:
     cannot tell those apart
 checked:
 - 'docs-platform: no-docs-host'
-- www.getavail.com (Website)
+- login.getavail.com (SignUp)
+- www.availproject.org (Website)

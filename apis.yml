@@ -36,6 +36,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: LLMsTxt
+  url: llms/avail-software-development-applications-llms.txt
+- type: SecurityTxt
+  url: well-known/avail-software-development-applications-clarity-security.txt
 - type: Plans
   url: plans/avail-software-development-applications-plans-pricing.yml
 - type: ChangeLog
