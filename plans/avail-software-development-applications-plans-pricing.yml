@@ -30,3 +30,35 @@ plans:
     currency: USD
     description: 3-Year Single User License, Minimum 50 Users
     limits: []
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - subscription
+  units: []
+  plans:
+  - name: Free
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: AVAIL Monthly
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: AVAIL Annual
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: AVAIL Enterprise
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
